@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      amazonlinux:2
+      amazonlinux : 2
     commands:
       - echo Installing dependencies...
       - sudo yum update
