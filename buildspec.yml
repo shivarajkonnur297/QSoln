@@ -10,13 +10,15 @@ phases:
       - sudo yum install gcc-c++ make -y
       - sudo curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
       - sudo yum install nodejs -y
-      - npm install
       - sudo yum update -y
   build:
     commands:
       - echo started Building app on 'date'
       - cp * /home/ec2-user/
+      - npm install
       - npm run build
+      - npm run
+      - npm start
   post_build:
     commands:
       - echo configuring node and npm...
