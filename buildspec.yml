@@ -17,6 +17,8 @@ phases:
   post_build:
     commands:
       - echo configuring node and npm...
-
+  artifact:
+    files:
+      - '**/*'
 
 
