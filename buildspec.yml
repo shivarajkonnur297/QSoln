@@ -14,13 +14,9 @@ phases:
   build:
     commands:
       - echo started Building app on 'date'
-      - npm run build
   post_build:
     commands:
       - echo configuring node and npm...
-      - npm install
-      - npm run
-      - npm start
 
 
 
